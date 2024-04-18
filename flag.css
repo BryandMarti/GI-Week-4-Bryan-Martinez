@@ -1,10 +1,20 @@
+
+
 body {
+  position: static;
   background-image: radial-gradient(red, green, blue);
-  display: inline-block;
-  background-repeat: no-repeat;
+  margin: 0;
+  padding: 0;
+}
+
+#positioning {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
 }
 
 #flag {
+  transform: scale(0.75);
   background-color: blue;
   width: 120vh;
   height: 30vh;
@@ -16,8 +26,8 @@ body {
 #starcell {
   padding: 0.2vh;
   width: 45vh;
-
 }
+
 #stars {
   letter-spacing:1.5vh;
   padding: 0.7vh;
@@ -35,49 +45,4 @@ body {
 
 
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 20px;
-}
 
-.item {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-}
-
-
-
-#boardposition {
-  background-repeat: no-repeat;
-  background-color: #cccccc;
-  background-image: linear-gradient(red, yellow);
-  width: 900px;
-  height: 900px;
-  border: 2px solid black;
-  
-}
-
-.checkerows {
-  display: flex;
-  justify-content: center;
-}
-
-
-#row1 {
-  margin-top: 45px;
-}
-
-.black {
-  background-color: black;  
-  width: 100px;
-  height: 100px;
-}
-
-.white {
-  background-color: white;
-  width: 100px;
-  height: 100px;
-}
