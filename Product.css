@@ -1,18 +1,156 @@
+body {
+  background-image: linear-gradient(lightblue, Lightyellow);
+  padding: 0;
+  margin: 0;
+}
+
+header {
+  display: inline-flexbox;
+  margin-top: -2rem;
+  background-color: cornsilk;
+}
+
+.basket {
+  justify-content: flex-end;
+  display: flex;
+  padding-right: 5%;
+}
+
+#basket {
+  width: 6vw;
+  margin-top: -9vw;
+}
+
+.title {
+  text-transform: uppercase;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  position: relative;
+  font-size: 4.5vh;
+  padding: 0.1vw;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+#fruitcount {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3vh;
+}
+
+input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3vh;
+}
+
 .grid-container {
+  margin-top: -33vh;
+  background-image: linear-gradient(lightblue, Lightyellow);
+  transform: scale(0.5);
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 20px;
 }
 
 .item {
-  background-color: #f2f2f2;
+  background-color: #f0861552;
   padding: 20px;
   text-align: center;
+  width: 30vw;
 }
 
 .item img {
   max-width: 20vw;
 }
 
+#Bananasize {
+  max-width: 15vw;
+}
 
+p {
+  font-size: 4vh;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  color: rgb(217, 20, 20);
+}
+
+/* Media Queries */
+@media only screen and (max-width: 375px) {
+  .title {
+    font-size: 3vh;
+    padding-top: 6vw;
+  }
+  
+  .grid-container {
+    margin-top: -78vh;
+    background-image: linear-gradient(lightblue, Lightyellow);
+    transform: scale(0.5);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .item {
+    width: 80vw;
+  }
+
+  .item img {
+    max-width: 60vw;
+  }
+
+  #Bananasize {
+    max-width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 500px) {
+ 
+  .title {
+    font-size: 3vh;
+    padding-top: 6vw;
+  }
+  
+  .grid-container {
+    margin-top: -73vh;
+    background-image: linear-gradient(lightblue, Lightyellow);
+    transform: scale(0.5);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .item {
+    width: 80vw;
+  }
+
+  .item img {
+    max-width: 60vw;
+  }
+
+  #Bananasize {
+    max-width: 40vw;
+  }
+}
+}
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  .title {
+    font-size: 4vh;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .title {
+    font-size: 4.5vh;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1980px) {
+  .title {
+    font-size: 5vh;
+  }
+}

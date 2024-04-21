@@ -1,10 +1,29 @@
 body {
-  background-image: radial-gradient(red, green, blue);
-  display: inline-block;
-  background-repeat: no-repeat;
+  background-image: linear-gradient(rgb(154, 215, 154), rgb(142, 142, 182));
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5vh;
+}
+
+h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  font-size: 5rem;
+  color: rgb(233, 182, 14);
+}
+
+#positioning {
+  margin-top: 5vh;
+  display: flex;
+  justify-content: center;
 }
 
 #flag {
+  transform: scale(0.75);
   background-color: blue;
   width: 120vh;
   height: 30vh;
@@ -16,8 +35,8 @@ body {
 #starcell {
   padding: 0.2vh;
   width: 45vh;
-
 }
+
 #stars {
   letter-spacing:1.5vh;
   padding: 0.7vh;
@@ -34,50 +53,268 @@ body {
 }
 
 
+@media only screen and (min-width: 375px) {
+  body {
+    background-image: linear-gradient(rgb(154, 215, 154), rgb(142, 142, 182));
+    margin: 0;
+    padding: 0;
+  }
 
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  padding: 20px;
+  header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-size: 3rem;
+    color: rgb(233, 182, 14);
+  }
+
+  #positioning {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #flag {
+    transform: scale(0.5);
+    background-color: blue;
+    width: 100vw;
+    height: 20vh;
+    border-spacing: 0vh;
+    border: 0.3rem solid;
+    border-color: black;
+  }
+
+  #starcell {
+    padding: 0.2rem;
+    width: 20vw;
+  }
+
+  #stars {
+    letter-spacing: 0.1rem;
+    padding: 0.5rem;
+    color: white;
+    font-size: 0.5rem;
+  }
+
+  .red_stripe,
+  .white_stripe {
+    height: 2.5vh;
+  }
+}
+@media only screen and (min-width: 550px) {
+  body {
+    background-image: linear-gradient(rgb(154, 215, 154), rgb(142, 142, 182));
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-size: 3rem;
+    color: rgb(233, 182, 14);
+  }
+
+  #positioning {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #flag {
+    transform: scale(0.5);
+    background-color: blue;
+    width: 110vw;
+    height: 30vh;
+    border-spacing: 0vh;
+    border: 0.3rem solid;
+    border-color: black;
+  }
+
+  #starcell {
+    padding: 0.2rem;
+    width: 20vw;
+  }
+
+  #stars {
+    letter-spacing: 0.2rem;
+    padding: 0.5rem;
+    color: white;
+    font-size: 0.65rem;
+  }
+
+  .red_stripe,
+  .white_stripe {
+    height: 3.5vh;
+  }
+}
+@media only screen and (min-width: 800px) {
+  body {
+    background-image: linear-gradient(rgb(154, 215, 154), rgb(142, 142, 182));
+    margin: 0;
+    padding: 0;
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-size: 3rem;
+    color: rgb(233, 182, 14);
+  }
+
+  #positioning {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #flag {
+    transform: scale(0.5);
+    background-color: blue;
+    width: 110vw;
+    height: 30vh;
+    border-spacing: 0vh;
+    border: 0.3rem solid;
+    border-color: black;
+  }
+
+  #starcell {
+    padding: 1.2rem;
+    width: 20vw;
+  }
+
+  #stars {
+    letter-spacing: 0.6rem;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.1rem;
+  }
+
+  .red_stripe,
+  .white_stripe {
+    height: 6vh;
+  }
 }
 
-.item {
-  background-color: #f2f2f2;
-  padding: 20px;
-  text-align: center;
-}
+@media only screen and (min-width: 1200px) {
 
 
+  body {
+@media only screen and (min-width: 375px) {
+  body {
+    background-image: linear-gradient(rgb(154, 215, 154), rgb(142, 142, 182));
+    margin: 0;
+    padding: 0;
+  }
 
-#boardposition {
-  background-repeat: no-repeat;
-  background-color: #cccccc;
-  background-image: linear-gradient(red, yellow);
-  width: 900px;
-  height: 900px;
-  border: 2px solid black;
+  header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+  }
+
+  h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-size: 3rem;
+    color: rgb(233, 182, 14);
+  }
+
+  #positioning {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+  }
+
+  #flag {
+    transform: scale(0.5);
+    background-color: blue;
+    width: 100vw;
+    height: 20vh;
+    border-spacing: 0vh;
+    border: 0.3rem solid;
+    border-color: black;
+  }
+
+  #starcell {
+    padding: 0.2rem;
+    width: 20vw;
+  }
+
+  #stars {
+    letter-spacing: 0.1rem;
+    padding: 0.5rem;
+    color: white;
+    font-size: 0.5rem;
+  }
+
+  .red_stripe,
+  .white_stripe {
+    height: 2.5vh;
+  }
+}    margin: 0;
+    padding: 0;
+  }
   
-}
+  header {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5vh;
+  }
+  
+  h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+    font-size: 5rem;
+    color: rgb(233, 182, 14);
+  }
+  
+  #positioning {
+    margin-top: -5vh;
+    display: flex;
+    justify-content: center;
+  }
+  
+  #flag {
+    transform: scale(0.75);
+    background-color: blue;
+    width: 120vw;
+    height: 30vh;
+    border-spacing: 0vh;
+    border: 0.6vh solid;
+    border-color: black;
+  }
+  
+  #starcell {
+    padding: 2vh;
+    width: 20vw;
+  }
+  
+  #stars {
+    letter-spacing: 0.6rem;
+    padding: 0.5rem;
+    color: white;
+    font-size: 1.8rem;
+  }
+  .red_stripe {
+    background-color:rgb(255, 22, 10);  
+    height: 5.5vh;
+  }
 
-.checkerows {
-  display: flex;
-  justify-content: center;
-}
-
-
-#row1 {
-  margin-top: 45px;
-}
-
-.black {
-  background-color: black;  
-  width: 100px;
-  height: 100px;
-}
-
-.white {
-  background-color: white;
-  width: 100px;
-  height: 100px;
+  .white_stripe {
+    background-color:rgb(255, 255, 255);
+    height: 5.5vh;
+  }
 }
