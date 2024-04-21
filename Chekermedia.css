@@ -1,0 +1,50 @@
+@media only screen and (max-width: 600px) and (min-width: 300px) {
+  body {
+    position: static;
+    background-image: linear-gradient(green, lightgreen);
+    margin: 0;
+    padding: 0;
+    font-size: 16px; 
+  }
+  
+  header {
+    margin: 2% 0 -2%;
+  }
+  
+  h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.5em;
+    color: #ff4500;
+    text-align: center; 
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    margin: 0.5em 2rem; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+  }
+  
+  #boardposition {
+    background-repeat: no-repeat;
+    background-color: #cccccc;
+    background-image: linear-gradient(red, yellow);
+    width: 60%; 
+    max-width: 900px; 
+    border: 2px solid black;
+    margin: auto;
+    z-index: 0;
+  }
+  
+  .checkerows {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .black {
+    color: black;
+  }
+
+  .white {
+    color: white;
+  }
+
+}

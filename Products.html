@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Product Grid</title>
   <link rel="stylesheet" href="Product.css">
+  <link rel="stylesheet" href="Productmedia.css">
+  <link rel="icon" type="image/png" href="files/storeconvinience.png">
 </head>
 <body>
 <header>
@@ -14,13 +16,27 @@
   <div class="basket">
     <img id="basket" src="files/grocery-basket-icon-3.png" alt="Basket">
   </div>
+  <nav id="hamburger-nav">
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span>
+      <span></span>
+      <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="/GI-Week-4-Bryan-Martinez/index.html" onclick="toggleMenu()">HomePage</a></li>
+        <li><a href="/GI-Week-4-Bryan-Martinez/flag.html" onclick="toggleMenu()">American Flag</a></li>
+        <li><a href="/GI-Week-4-Bryan-Martinez/CheckerBoard.html" onclick="toggleMenu()">CheckerBoard</a></li>
+      </div>
+    </div>
+  </nav>
 </header>
   <section class="grid-container">
     <div class="item">
       <p>Fresh Bartlett Pears, <br>
       Bag, Size: 1lb
       </p>
-      <img src="files/item- pear.png" alt="Pear Photo">
+      <a href="https://www.walmart.com/ip/Fresh-Bosc-Pears-Each/349351812?wl13=1452&selectedSellerId=0"><img src="files/item- pear.png" alt="Pear Photo"></a>
       <p>$1.24 
         <form action="">
         <label for="fruit"></label>
@@ -41,7 +57,7 @@
         3lbs bag
       
       </p>
-      <img src="files/item-apples.png" alt="Apples Photo">
+      <a href="https://www.walmart.com/ip/Fresh-Gala-Apples-3-lb-Bag/44390958?athbdg=null%26athbdg%3DL1200_L1200&from=/search"><img src="files/item-apples.png" alt="Apples Photo"></a>
       <p>$3.86
         <form action="">
           <label for="fruit"></label>
@@ -61,7 +77,7 @@
       <p>Organic Bananas - <br>
       2lbs - Imported
       </p>
-      <img id="Bananasize" src="files/item-banana.png" alt="Bananas Photos">
+      <a href="https://www.walmart.com/ip/Marketside-Fresh-Organic-Bananas-Bunch/51259338?from=/search"><img id="Bananasize" src="files/item-banana.png" alt="Bananas Photos"></a>
       <p>$1.99
         <form action="">
           <label for="fruit"></label>
@@ -81,7 +97,7 @@
       <p>Extra Large Red Grapes<br>
       - 1.5lbs bag
       </p>
-      <img src="files/item-grapes.png" alt="Grapes Photo">
+      <a href="https://www.walmart.com/ip/Fresh-Red-Seedless-Grapes-Bag-2-25-lbs-Bag-Est/47770140?from=/search"><img src="files/item-grapes.png" alt="Grapes Photo"></a>
       <p>$3.79
         <form action="">
           <label for="fruit"></label>
@@ -99,10 +115,10 @@
     </div>
     <div class="item">
       <p>Spanish Plum, Jocotes<br>
-      (Spondias Purpurea) 2lbs bag
+      (Spondias Purpurea) 1/2lb bag
       </p>
-      <img src="files/item-jocotes.png" alt="Jocotes Photo">
-      <p>$6.68
+      <a href="https://ferdelpromotions.com/shop/frozen-foods-wholesale-hispanic-frozen/sem-jocote-rojo-12-14-oz/?utm_source=Google%20Shopping&utm_campaign=Ferdel_Feed&utm_medium=cpc&utm_term=7148&srsltid=AfmBOoqC-i4aFYA190NOIZyHf2Jx2BmpXXrKvyseG4vG18Jpz_IQZczlesc"><img src="files/item-jocotes.png" alt="Jocotes Photo"></a> 
+      <p>$22.56
         <form action="">
           <label for="fruit"></label>
           <select name="0" id="fruitcount">
@@ -121,7 +137,7 @@
       <p>Anacardium Occidentale <br>
       Red Cashew Fruit 2 count
       </p>
-      <img src="files/item-maranon.png" alt="Maranon Photo">
+      <a href="https://www.tradewindsfruit.com/anacradium-occidentale-red-cashew-apple-seeds"><img src="files/item-maranon.png" alt="Maranon Photo"></a>
       <p>$5.50
         <form action="">
           <label for="fruit"></label>
@@ -141,7 +157,7 @@
       <p>Fresh Navel Oranges, <br>
       Size: 4lbs
       </p>
-      <img src="files/item-orange.png" alt="Orange Photo">
+      <a href="https://www.walmart.com/ip/Fresh-Cara-Cara-Oranges-3-lb-Bag/774776781?wl13=1452&selectedSellerId=0"><img src="files/item-orange.png" alt="Orange Photo"></a> 
       <p>$4.98
         <form action="">
           <label for="fruit"></label>
@@ -161,7 +177,7 @@
       <p>Fresh Papaya, <br>
       Each 1 count. Size: 3lbs
       </p>
-      <img src="files/item-papaya.png" alt="Papaya Photo">
+      <a href="https://www.walmart.com/ip/Fresh-Papaya-Each-1-Count/44391191?from=/search"><img src="files/item-papaya.png" alt="Papaya Photo"></a> 
       <p>$5.31
         <form action="">
           <label for="fruit"></label>
@@ -178,5 +194,9 @@
       </p>
     </div>
   </section>
+
+  <script src="script.js"></script>
+
+
 </body>
 </html>
