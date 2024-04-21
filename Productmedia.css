@@ -1,0 +1,80 @@
+/* Media Queries */
+@media only screen and (max-width: 375px) {
+  .title {
+    font-size: 3vh;
+    padding-top: 6vw;
+  }
+  
+  .grid-container {
+    margin-top: -78vh;
+    background-image: linear-gradient(lightblue, Lightyellow);
+    transform: scale(0.5);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .item {
+    width: 80vw;
+  }
+
+  .item img {
+    max-width: 60vw;
+  }
+
+  #Bananasize {
+    max-width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 500px) {
+ 
+  .title {
+    font-size: 3vh;
+    padding-top: 6vw;
+  }
+  
+  .grid-container {
+    margin-top: -73vh;
+    background-image: linear-gradient(lightblue, Lightyellow);
+    transform: scale(0.5);
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .item {
+    width: 80vw;
+  }
+
+  .item img {
+    max-width: 60vw;
+  }
+
+  #Bananasize {
+    max-width: 40vw;
+  }
+}
+
+
+@media only screen and (min-width: 501px) and (max-width: 800px) {
+  .title {
+    font-size: 4vh;
+  }
+}
+
+@media only screen and (min-width: 801px) and (max-width: 1200px) {
+  .title {
+    font-size: 4.5vh;
+  }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1980px) {
+  .title {
+    font-size: 5vh;
+  }
+}

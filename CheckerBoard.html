@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="Checker.css">
+  <link rel="stylesheet" href="Chekermedia.css">
   <link rel="icon" type="image/png" href="files/checker logo page.png">
 
   <title>Document</title>
@@ -11,6 +12,20 @@
 <body>
   <header>
     <h1>CheckerBoard</h1>
+    <nav id="hamburger-nav">
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="/GI-Week-4-Bryan-Martinez/index.html" onclick="toggleMenu()">HomePage</a></li>
+          <li><a href="/GI-Week-4-Bryan-Martinez/flag.html" onclick="toggleMenu()">American Flag</a></li>
+          <li><a href="/GI-Week-4-Bryan-Martinez/Products.html" onclick="toggleMenu()">Product Grid</a></li>
+        </div>
+      </div>
+    </nav>
   </header>
   <main id="boardposition">
     <section class="checkerows" id="row1">
@@ -98,5 +113,8 @@
 <footer class="spacing">
   <!-- this section is open for any line of code  -->
 </footer>
+
+<script src="script.js"></script>
+
 </body>
 </html>

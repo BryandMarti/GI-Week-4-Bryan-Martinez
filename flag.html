@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="flag.css">
+  <link rel="stylesheet" href="flagmedia.css">
   <link rel="icon" type="image/png" href="files/flag logo page.webp">
   <title>Document</title>
 </head>
@@ -11,6 +12,20 @@
 <header>
   <h1>American Flag</h1>
 </header>
+<nav id="hamburger-nav">
+  <div class="hamburger-menu">
+    <div class="hamburger-icon" onclick="toggleMenu()">
+    <span></span>
+    <span></span>
+    <span></span>
+    </div>
+    <div class="menu-links">
+      <li><a href="/GI-Week-4-Bryan-Martinez/index.html" onclick="toggleMenu()">HomePage</a></li>
+      <li><a href="/GI-Week-4-Bryan-Martinez/CheckerBoard.html" onclick="toggleMenu()">CheckerBoard</a></li>
+      <li><a href="/GI-Week-4-Bryan-Martinez/Products.html" onclick="toggleMenu()">Product Grid</a></li>
+    </div>
+  </div>
+</nav>
   <section id="positioning">
     <table id="flag">
       <td id="starcell" rowspan="7">
@@ -175,5 +190,8 @@
       </td>
     </table>
   </section>
+
+<script src="script.js"></script>
+
 </body>
 </hmtl>
